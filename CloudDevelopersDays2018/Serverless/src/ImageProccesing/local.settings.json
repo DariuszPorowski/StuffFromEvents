@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "thumbWidth": "200",
+    "thumbHeight": "200",
+    "imageContainerName": "images",
+    "thumbContainerName": "thumbs",
+    "storageAccountCS": "<storageAccountCS>"
+  }
+}

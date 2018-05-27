@@ -1,0 +1,7 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "BLOB_HOST": "<appname>.blob.core.windows.net",
+    "NAME_HOST": "<appname>.azurewebsites.net"
+  }
+}

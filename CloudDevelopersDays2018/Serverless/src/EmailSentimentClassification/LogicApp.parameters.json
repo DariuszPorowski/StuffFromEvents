@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "logicAppName": {
+      "value": "EmailSentimentClassification"
+    },
+    "cognitiveservicescontentmoderator_1_api_key": {
+      "value": "<cognitiveservicescontentmoderator_1_api_key>"
+    },
+    "cognitiveservicestextanalytics_1_apiKey": {
+      "value": "<cognitiveservicestextanalytics_1_apiKey>"
+    },
+    "diagnosticsApiVersion": {
+      "value": "2016-09-01"
+    },
+    "omsWorkspaceId": {
+      "value": "/subscriptions/<subId>/resourcegroups/shared-generic/providers/microsoft.operationalinsights/workspaces/<workspaceName>"
+    },
+    "omsWorkspaceName": {
+      "value": "daporo"
+    },
+    "omsWorkspaceResourceGroupName": {
+      "value": "shared-generic"
+    },
+    "omsSolutionApiVersion": {
+      "value": "2015-11-01-preview"
+    },
+    "omsSolutionLocation": {
+      "value": "westeurope"
+    },
+    "omsSolutionName": {
+      "value": "LogicAppsManagement"
+    }
+  }
+}

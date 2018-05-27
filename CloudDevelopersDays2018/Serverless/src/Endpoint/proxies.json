@@ -1,0 +1,37 @@
+﻿{
+  "proxies": {
+    "root": {
+      "matchCondition": {
+        "route": "/"
+      },
+      "backendUri": "https://%BLOB_HOST%/static/index.html"
+    },
+    "HelloProxy": {
+      "matchCondition": {
+        "route": "/hello"
+      },
+      "responseOverrides": {
+        "response.body": "{\"msg\":\"Hello from response transform\"}",
+        "response.headers.Content-Type": "application/json"
+      }
+    },
+    "name": {
+      "matchCondition": {
+        "route": "/name/{*name}"
+      },
+      "backendUri": "https://%NAME_HOST%/api/MyNameIs?name={name}"
+    },
+    "graph": {
+      "matchCondition": {
+        "route": "/graph/{*restOfPath}"
+      },
+      "backendUri": "https://jsonplaceholder.typicode.com/{restOfPath}"
+    },
+    "people": {
+      "matchCondition": {
+        "route": "/people"
+      },
+      "backendUri": "https://swapi.co/api/people/"
+    }
+  }
+}
