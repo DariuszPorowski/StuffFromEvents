@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProccesing", "ImagePro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyseImage", "AnalyseImage\AnalyseImage.csproj", "{812F91F7-873E-4460-AB27-836EE4A53634}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGrid", "EventGrid\EventGrid.csproj", "{7E6AB319-5CF5-439A-8F70-C3CFEF8C065A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{812F91F7-873E-4460-AB27-836EE4A53634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{812F91F7-873E-4460-AB27-836EE4A53634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{812F91F7-873E-4460-AB27-836EE4A53634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6AB319-5CF5-439A-8F70-C3CFEF8C065A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6AB319-5CF5-439A-8F70-C3CFEF8C065A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6AB319-5CF5-439A-8F70-C3CFEF8C065A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6AB319-5CF5-439A-8F70-C3CFEF8C065A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

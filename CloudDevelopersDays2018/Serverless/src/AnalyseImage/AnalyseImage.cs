@@ -33,14 +33,17 @@ namespace AnalyseImage
 
             log.Info($"Triggering with event {eventType} and url {imageUrl}");
 
-            var visualFeatureTypes = new List<VisualFeatureTypes>();
-            visualFeatureTypes.Add(VisualFeatureTypes.Adult);
-            visualFeatureTypes.Add(VisualFeatureTypes.Categories);
-            visualFeatureTypes.Add(VisualFeatureTypes.Color);
-            visualFeatureTypes.Add(VisualFeatureTypes.Description);
-            //visualFeatureTypes.Add(VisualFeatureTypes.Faces);
-            //visualFeatureTypes.Add(VisualFeatureTypes.ImageType);
-            //visualFeatureTypes.Add(VisualFeatureTypes.Tags);
+            var visualFeatureTypes = new List<VisualFeatureTypes>
+            {
+                VisualFeatureTypes.Adult,
+                VisualFeatureTypes.Categories,
+                VisualFeatureTypes.Color,
+                VisualFeatureTypes.Description
+                //VisualFeatureTypes.Faces,
+                //VisualFeatureTypes.ImageType,
+                //VisualFeatureTypes.Tags
+            };
+
             var analyzeImage = await computerVisionApi.AnalyzeImageAsync(imageUrl, visualFeatureTypes);
 
             var blobReference = await cloudBlobClient.GetBlobReferenceFromServerAsync(new Uri(imageUrl));

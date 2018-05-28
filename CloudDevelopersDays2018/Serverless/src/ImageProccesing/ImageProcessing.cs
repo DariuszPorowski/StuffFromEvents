@@ -79,13 +79,9 @@ namespace BlobImageProccesing
         private static void DeleteAction(Uri imageUrl, TraceWriter log)
         {
             var deletedImage = new CloudBlob(imageUrl);
-            
-            //var otherImage = deletedImage.Container.Name.Equals(StorageHelper.GetImageContainerName()) ?
-            //    StorageHelper.GetThumbnailBlobReference(deletedImage.Name) :
-            //    StorageHelper.GetImageBlobReference(deletedImage.Name);
+
             try
             {
-                //otherImage.DeleteIfExists();
                 StorageHelper.GetThumbnailBlobReference(deletedImage.Name).DeleteIfExists();
             }
             catch (Exception e)
@@ -106,29 +102,5 @@ namespace BlobImageProccesing
 
             return envVar;
         }
-
-        //private static int GetThumbWidth()
-        //{
-        //    Int32 imageWidth;
-        //    var imgWidth = Environment.GetEnvironmentVariable("thumbWidth");
-        //    if (!Int32.TryParse(imgWidth, out imageWidth))
-        //    {
-        //        imageWidth = 400;
-        //    }
-
-        //    return imageWidth;
-        //}
-
-        //private static int GetThumbHeight()
-        //{
-        //    Int32 imageHeight;
-        //    var imgHeight = Environment.GetEnvironmentVariable("thumbHeight");
-        //    if (!Int32.TryParse(imgHeight, out imageHeight))
-        //    {
-        //        imageHeight = 300;
-        //    }
-
-        //    return imageHeight;
-        //}
     }
 }

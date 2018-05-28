@@ -1,1 +1,1 @@
-# StuffFromEvents
+# Stuff from Events, Conferences, Meetups, etc
